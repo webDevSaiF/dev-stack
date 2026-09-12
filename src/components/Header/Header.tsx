@@ -10,7 +10,7 @@ export default function Header() {
   const handleIsMenuOpen = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="px-5 md:px-10 relative">
+    <header className="px-5 md:px-10 sticky top-0 bg-white z-10">
       <div className="container mx-auto py-4 md:py-6 flex items-center justify-between gap-5">
         <Logo></Logo>
         <div className="hidden md:block">

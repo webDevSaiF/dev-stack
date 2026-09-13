@@ -1,6 +1,7 @@
 import { Suspense, useState } from "react";
 import { toast } from "react-toastify";
 import type { ITech, TechPromise } from "../../types/types";
+import Spinner from "../Spinner/Spinner";
 import StackSidebar from "./StackSidebar";
 import TechnologyCards from "./TechnologyCards";
 
@@ -49,7 +50,7 @@ export default function Technologies() {
           </p>
         </div>
         {/* Row 02 */}
-        <Suspense fallback={<p>Loading technologies...</p>}>
+        <Suspense fallback={<Spinner></Spinner>}>
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="col-span-12 lg:col-span-9">
               <TechnologyCards

@@ -19,7 +19,7 @@ export default function StackSidebar({
   console.log(techs);
 
   return (
-    <div className="rounded-xl border border-[#F1F5F9] bg-white p-6 sticky top-[90px]">
+    <div className="rounded-xl border border-[#F1F5F9] bg-white p-6 md:sticky top-[100px]">
       <h3 className="text-[#0F172A] font-bold text-base leading-1.5">
         Your Stack
       </h3>

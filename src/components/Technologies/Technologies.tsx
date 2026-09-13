@@ -1,4 +1,5 @@
 import { Suspense, useState } from "react";
+import { toast } from "react-toastify";
 import type { ITech, TechPromise } from "../../types/types";
 import StackSidebar from "./StackSidebar";
 import TechnologyCards from "./TechnologyCards";
@@ -17,13 +18,19 @@ export default function Technologies() {
       return;
     }
     setStack([...stack, tech]);
+    toast.success(`${tech.name} added to your stack!`);
   };
 
   const handleRemoveStack = (id: string) => {
+    const removed = stack.find((s) => s.id === id);
     const updatedStack = stack.filter((s) => s.id !== id);
     setStack([...updatedStack]);
+    toast.info(`${removed?.name} removed from your stack.`);
   };
-  const handleRemoveAllStack = () => setStack([]);
+  const handleRemoveAllStack = () => {
+    setStack([]);
+    toast.info("All technologies removed from your stack.");
+  };
 
   return (
     <section className="px-5 md:px-10">

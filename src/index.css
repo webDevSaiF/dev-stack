@@ -6,6 +6,7 @@
   --animate-slide-down: slideDown 0.2s ease-out;
   --button-gradient: linear-gradient(to right, #f97316, #ec4899);
   --headline-gradient: linear-gradient(to right, #ff5722, #d81b7e, #7c3aed);
+  --sub-headline-gradient: linear-gradient(to right, #ec4899, #8b5cf6);
 }
 h1,
 h2,

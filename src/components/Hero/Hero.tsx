@@ -4,7 +4,7 @@ import heroImage from "../../assets/hero-image.png";
 export default function Hero() {
   return (
     <section className="px-5 md:px-10">
-      <div className="container mx-auto py-10  md:pt-32.75 md:pb-18 grid items-center grid-cols-12 gap-5.5">
+      <div className="container mx-auto py-10 md:pt-12 md:pb-0 grid items-center grid-cols-12 gap-5.5">
         <div className="col-span-12 md:col-span-7">
           <h1 className="text-3xl text-center md:text-left md:text-6xl text-[#0F172A] font-extrabold leading-[1] tracking-[-1.5px]">
             Build Your Ideal

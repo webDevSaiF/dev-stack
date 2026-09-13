@@ -1,3 +1,7 @@
 header img.logo {
   max-width: 137px;
 }
+
+footer img.logo {
+  max-width: 123px;
+}

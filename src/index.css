@@ -4,6 +4,8 @@
   --font-heading: "Inter", sans-serif;
   --color-brand: #db2777;
   --animate-slide-down: slideDown 0.2s ease-out;
+  --button-gradient: linear-gradient(to right, #f97316, #ec4899);
+  --headline-gradient: linear-gradient(to right, #ff5722, #d81b7e, #7c3aed);
 }
 h1,
 h2,
